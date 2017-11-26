@@ -12,6 +12,7 @@ end
 
 def appointments
   @appointments
+  appointments.doctor=self
 end
 
 def patients
