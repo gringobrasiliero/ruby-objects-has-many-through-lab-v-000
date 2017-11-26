@@ -12,13 +12,13 @@ end
 
 def appointments
   @appointments
-  appointments.doctor=self
 end
 
 def patients
-     @appointments.collect do |appointment|
-       appointment.patient
+  self.appointments.collect do |patient|
+    patient.appointments
 end
 end
+
 
 end
